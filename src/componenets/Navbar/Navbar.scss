@@ -1,0 +1,178 @@
+@import "../../constants/variables.scss";
+nav {
+  background-color: $lightGrey;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  img {
+    width: 150px;
+  }
+}
+.app-navbar {
+  padding: 0 3rem;
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 500px) {
+    padding: 0 1.5rem;
+  }
+}
+
+.app-navbar-links {
+  font-family: $robotoMono;
+  display: flex;
+  li {
+    list-style: none;
+    margin: 0 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    @media screen and (max-width: 1000px) {
+      margin: 0 1rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      &:hover {
+        color: $green;
+        transition: all 0.2s ease;
+        &::after {
+          content: "/>";
+          position: absolute;
+          right: -1.5rem;
+        }
+        &::before {
+          content: "<";
+          position: absolute;
+          left: -1rem;
+        }
+      }
+    }
+  }
+}
+
+.app-nav-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .nav-github {
+    font-family: $dmSans;
+    color: #999999;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    &:hover {
+      color: #fff;
+    }
+    img {
+      width: 20px;
+      margin-right: 1rem;
+    }
+  }
+}
+.nav-mail {
+  background-color: #333438;
+  padding: 0.8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  img {
+    width: 100%;
+  }
+}
+
+.app-navbar-links,
+.app-nav-connect {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.app-nav-hamburger {
+  background-color: #333438;
+  display: none;
+  padding: 0.8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 11;
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
+}
+
+.hamburger-react {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+}
+
+.app-nav-sidebar {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 30rem;
+  background-color: $lightGrey;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+
+.app-navbar-links-mobo {
+  padding: 8rem 5rem;
+  @media screen and (max-width: 600px) {
+    padding: 8rem 8rem;
+  }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 4rem;
+    font-family: $robotoMono;
+    transform-origin: left center;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      position: relative;
+      &:hover {
+        color: $green;
+        transition: all 0.2s ease;
+        &::after {
+          content: "/>";
+          position: absolute;
+          right: -1.5rem;
+        }
+        &::before {
+          content: "<";
+          position: absolute;
+          left: -1rem;
+        }
+      }
+    }
+  }
+}

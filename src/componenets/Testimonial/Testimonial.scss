@@ -1,0 +1,51 @@
+@import "../../constants/variables.scss";
+.testimonial-container {
+  width: 100%;
+  background-color: $lightGrey;
+  padding: 3rem;
+  @media screen and (max-width: 500px) {
+    padding: 3rem 2rem;
+  }
+}
+#tetstimonial {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.reviewers-conatiner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  @media screen and (max-width: 1000px) {
+    margin-top: 2rem;
+  }
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+    align-items: center;
+    div {
+      width: auto;
+    }
+  }
+}
+
+.testimonial-heading {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+
+  h1 {
+    font-family: $robotoMono;
+    color: white;
+    font-weight: 400;
+    margin-right: 3rem;
+  }
+  span {
+    border-radius: 1px;
+    background-color: #8c8d90;
+    height: 2px;
+    transform-origin: left, center;
+  }
+}

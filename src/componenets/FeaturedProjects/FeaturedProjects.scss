@@ -1,0 +1,11 @@
+@import "../../constants/variables.scss";
+.FeaturedProjects-container {
+  width: 100%;
+  background-color: $lightGrey;
+  padding: 3rem;
+}
+
+#FeaturedProjects {
+  max-width: 1200px;
+  margin: auto;
+}

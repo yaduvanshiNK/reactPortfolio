@@ -1,0 +1,68 @@
+@import "../../constants/variables.scss";
+
+.introduction-container {
+  width: 100%;
+  background-color: #252629;
+}
+
+#introduction {
+  display: flex;
+  gap: 10vw;
+  max-width: 1600px;
+  margin: auto;
+  padding: 10rem 3rem;
+  @media screen and (max-width: 1200px) {
+    gap: 5vw;
+  }
+  @media screen and (max-width: 1100px) {
+    flex-direction: column-reverse;
+    padding: 5rem;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    padding: 3rem 2rem;
+  }
+}
+
+.cards-conatiner {
+  flex: 1;
+}
+.intro-section {
+  flex: 1;
+}
+
+.intro-section {
+  font-family: $robotoMono;
+  span {
+    color: #7d7f82;
+  }
+  H1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    @media screen and (max-width: 600px) {
+      font-size: 2.7rem;
+    }
+  }
+  p {
+    font-family: $dmSans;
+    color: #7d7f82;
+    font-size: 1.2rem;
+  }
+}
+
+.quote {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.intro-socials-container {
+  display: flex;
+  margin-top: 2rem;
+  .css-tfcn99 {
+    display: block;
+    padding: 0;
+    margin-right: 2rem;
+  }
+}
