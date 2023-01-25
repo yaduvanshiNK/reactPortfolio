@@ -1,2 +1,2 @@
-#Portfolio website developed suing ReactJS
+#Portfolio website developed using ReactJS
 [Live Portfolio](https://yaduvanshink.in/)
