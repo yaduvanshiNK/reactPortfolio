@@ -7,11 +7,7 @@ import "./Navbar.scss";
 const Navbar = () => {
   const menuList = ["About Me", "Projects", "Testimonials", "Contact"];
   const [isOpen, setOpen] = useState(false);
-  const defaultScale = {
-    whileInView: {
-      scale: [0, 1],
-    },
-  };
+
   return (
     <nav>
       <div className="app-navbar">

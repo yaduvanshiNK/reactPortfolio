@@ -6,7 +6,7 @@ import TestimonialData from "../../constants/TestimonialData";
 import Reviewers from "../Blocks/TestimonialCard/Reviewers";
 const Testimonial = () => {
   const [reviews, setReviews] = useState(0);
-  const [star, setStar] = useState(5);
+  const [star, setStar] = useState(TestimonialData[0].starCount);
 
   return (
     <div className="testimonial-container">
@@ -43,7 +43,7 @@ const Testimonial = () => {
           <div
             onClick={() => {
               setReviews(0);
-              setStar(5);
+              setStar(TestimonialData[0].starCount);
             }}
           >
             <Reviewers
@@ -57,7 +57,7 @@ const Testimonial = () => {
           <div
             onClick={() => {
               setReviews(1);
-              setStar(4);
+              setStar(TestimonialData[1].starCount);
             }}
           >
             <Reviewers
@@ -70,7 +70,7 @@ const Testimonial = () => {
           <div
             onClick={() => {
               setReviews(2);
-              setStar(4);
+              setStar(TestimonialData[2].starCount);
             }}
           >
             <Reviewers

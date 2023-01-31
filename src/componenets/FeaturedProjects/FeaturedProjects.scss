@@ -9,3 +9,143 @@
   max-width: 1200px;
   margin: auto;
 }
+
+.project-container {
+  display: flex;
+  position: relative;
+}
+
+.project-preview {
+  filter: grayscale(100%) contrast(1) brightness(80%);
+  transition: filter 0.25s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 50rem;
+  position: relative;
+  @media screen and (max-width: 800px) {
+    max-width: 100%;
+    min-height: 25rem;
+    filter: grayscale(100%) contrast(1) brightness(15%) blur(1px);
+  }
+  &:hover {
+    filter: none;
+    @media screen and (max-width: 800px) {
+      filter: grayscale(100%) contrast(1) brightness(15%) blur(1px);
+    }
+    img {
+      transform: scale(1.02);
+    }
+  }
+  img {
+    transition: all 0.2s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.project-urls {
+  a {
+    img {
+      width: 1.5rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.feather {
+  stroke: #fff !important;
+}
+.project-desc {
+  position: absolute;
+  max-width: 30rem;
+  right: 0;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  @media screen and (max-width: 800px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  span {
+    color: rgb(148, 148, 148);
+    font-family: $robotoMono;
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-family: $dmSans;
+    color: $green;
+    padding-bottom: 0.5rem;
+  }
+  .project-info {
+    text-align: end;
+    font-family: $dmSans;
+    font-weight: 100;
+    background-color: #1e1f22;
+    color: #fff;
+    padding: 1.5rem;
+  }
+
+  p {
+    span {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin: 1rem 0.5rem;
+      color: $lightGrey;
+      font-weight: 700;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      background-color: $green;
+    }
+  }
+}
+
+.project-container {
+  &:nth-child(2) {
+    margin: 6rem 0;
+    flex-direction: row-reverse;
+
+    .project-desc {
+      position: absolute;
+      max-width: 30rem;
+      left: 0;
+      top: 10%;
+      align-items: flex-start;
+      @media screen and (max-width: 800px) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+    }
+    .project-info {
+      text-align: start;
+    }
+  }
+}
+
+.featuredProject-heading {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  padding: 5rem 0 3rem 0;
+  margin: auto;
+
+  h1 {
+    font-family: $robotoMono;
+    color: white;
+    font-weight: 400;
+    margin-right: 3rem;
+  }
+  span {
+    border-radius: 1px;
+    background-color: #8c8d90;
+    height: 2px;
+    transform-origin: left, center;
+  }
+}

@@ -21,8 +21,18 @@ import bgCircle from "../assets/bgCircle.svg";
 import linkedin from "../assets/linkedin.svg";
 import email from "../assets/envelope.svg";
 import star from "../assets/star-filled.svg";
+import Grover from "../assets/groverPreview.webp";
+import Kizuki from "../assets/kizukiPreview.webp";
+import Medev from "../assets/medevPreview.webp";
+import lineGithub from "../assets/lineGithub.svg";
+import lineShare from "../assets/lineShare.svg";
 
 export default {
+  lineGithub,
+  lineShare,
+  Grover,
+  Medev,
+  Kizuki,
   star,
   githubGreen,
   linkedin,

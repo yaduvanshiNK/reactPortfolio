@@ -1,6 +1,15 @@
 import React from "react";
-
-const Project = ({ websitePreview, projectName, projectDesc }) => {
+import { motion } from "framer-motion";
+import "./FeaturedProjects.scss";
+import images from "../../constants/imageRef";
+const Project = ({
+  websitePreview,
+  projectName,
+  projectDesc,
+  usedTech,
+  liveLink,
+  gitHubLink,
+}) => {
   return (
     <div className="project-container">
       <div className="project-preview">
@@ -9,7 +18,30 @@ const Project = ({ websitePreview, projectName, projectDesc }) => {
       <div className="project-desc">
         <span>Featured Project</span>
         <h1>{projectName}</h1>
-        <p>{projectDesc}</p>
+        <p className="project-info">{projectDesc}</p>
+        <p>
+          {usedTech.map((tech) => (
+            <span key={`tech-${tech}`}>{tech}</span>
+          ))}
+        </p>
+        <div className="project-urls">
+          <a href={gitHubLink} target="_blank" className="project-github">
+            <motion.img
+              src={images.lineGithub}
+              whileHover={{
+                scale: 1.1,
+              }}
+            />
+          </a>
+          <a href={liveLink} target="_blank" className="project-share">
+            <motion.img
+              whileHover={{
+                scale: 1.1,
+              }}
+              src={images.lineShare}
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
