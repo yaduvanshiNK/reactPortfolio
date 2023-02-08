@@ -5,14 +5,31 @@ import image from "../../constants/imageRef";
 import "./Navbar.scss";
 
 const Navbar = () => {
-  const menuList = ["About Me", "Projects", "Testimonials", "Contact"];
+  const menuList = [
+    {
+      name: "About Me",
+      link: "#introduction",
+    },
+    {
+      name: "Projects",
+      link: "#projects",
+    },
+    {
+      name: "Testimonials",
+      link: "#tetstimonial",
+    },
+    {
+      name: "Contact",
+      link: "#contact",
+    },
+  ];
   const [isOpen, setOpen] = useState(false);
 
   return (
     <nav>
       <div className="app-navbar">
         <a href="/" className="nav-logo">
-          <img src={image.logo} alt="" />
+          <img src={image.logo} />
         </a>
 
         <ul className="app-navbar-links">
@@ -21,17 +38,17 @@ const Navbar = () => {
               whileTap={{
                 scale: 0.9,
               }}
-              key={`link-${menuItem}`}
+              key={`link-${menuItem.name}`}
               id={`menu-item-${index}`}
             >
-              <a href="#">{menuItem}</a>
+              <a href={menuItem.link}>{menuItem.name}</a>
             </motion.li>
           ))}
         </ul>
         <div className="app-nav-connect">
           <motion.a href="#" className="nav-github">
             <motion.img
-              whileTap={{
+              whileHover={{
                 scale: 1.2,
               }}
               src={image.github}
@@ -47,11 +64,11 @@ const Navbar = () => {
             </motion.span>
           </motion.a>
           <motion.a
-            whileTap={{
-              scale: 1.2,
+            whileHover={{
+              scale: 1.1,
             }}
             whileInView={{
-              opacity: [0.5, 1],
+              opacity: [0.3, 1],
             }}
             href="#"
             className="nav-mail"
@@ -66,7 +83,14 @@ const Navbar = () => {
             setOpen(!isOpen);
           }}
         >
-          <Hamburger className="hamburger" color="#64f4ac" size={20} rounded />
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            className="hamburger"
+            color="#64f4ac"
+            size={20}
+            rounded
+          />
         </div>
         {isOpen && (
           <motion.div
@@ -85,12 +109,12 @@ const Navbar = () => {
                   whileHover={{
                     scale: 1.1,
                   }}
-                  key={`key-${menuListMobo}`}
+                  key={`key-${menuListMobo.name}`}
                   onClick={() => {
                     setOpen(!isOpen);
                   }}
                 >
-                  <a href="#">{menuListMobo}</a>
+                  <a href={menuListMobo.link}>{menuListMobo.name}</a>
                 </motion.li>
               ))}
             </ul>

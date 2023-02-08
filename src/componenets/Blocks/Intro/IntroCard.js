@@ -3,8 +3,14 @@ import { motion } from "framer-motion";
 import "./IntroCard.scss";
 
 const Intro = ({ title, icon, desc, count }) => {
+  const itemA = {
+    hidden: { scale: 0, right: 500 },
+    show: { scale: 1, right: 0 },
+  };
+
   return (
     <motion.div
+      variants={itemA}
       whileTap={{
         scale: [1, 0.95],
       }}

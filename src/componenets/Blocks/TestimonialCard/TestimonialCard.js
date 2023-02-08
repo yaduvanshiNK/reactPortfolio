@@ -36,7 +36,7 @@ const TestimonialCard = ({ number, review }) => {
       <div className="rating">
         <Stars number={number} />
         <motion.span animate={ratingController}>{number}.0 Rating</motion.span>
-        <img className="quote" src={iamges.quotesSign} />
+        <img className="quote" src={iamges.quotesSign} alt="quote-sign" />
       </div>
       <motion.div
         animate={reviewController}

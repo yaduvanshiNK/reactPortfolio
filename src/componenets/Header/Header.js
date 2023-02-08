@@ -26,6 +26,7 @@ const Header = () => {
       <div className="app-hero-container">
         <div className="hero-info">
           <motion.div
+            viewport={{ once: true }}
             whileInView={{
               width: "12rem",
               transition: {
@@ -47,6 +48,7 @@ const Header = () => {
         <div className="hero-bg">
           <div className="hero-image">
             <motion.img
+              viewport={{ once: true }}
               animate={{
                 y: [100, 0],
                 opacity: [0, 1],
@@ -56,10 +58,12 @@ const Header = () => {
                 },
               }}
               src={images.profile}
+              alt="profile-pcture-yaduvanshiNK"
             />
           </div>
           <div className="hero-bg-circle">
             <motion.img
+              viewport={{ once: true }}
               animate={{
                 scale: [0, 1],
                 opacity: [0, 1],
@@ -68,11 +72,15 @@ const Header = () => {
                 duration: 0.4,
               }}
               src={images.bgCircle}
+              alt="background-circle"
             />
             <motion.div className="header-skills-circle">
               {skillsImages.map((image) => (
-                <motion.div whileInView={scaleVariants.whileInView}>
-                  <img src={image} />
+                <motion.div
+                  viewport={{ once: true }}
+                  whileInView={scaleVariants.whileInView}
+                >
+                  <img src={image} alt="front-end-texh-stack" />
                 </motion.div>
               ))}
             </motion.div>

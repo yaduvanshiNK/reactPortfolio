@@ -2,22 +2,23 @@ import images from "./imageRef";
 
 const FeaturedProjectsData = [
   {
-    websitePreview: images.Kizuki,
-    projectName: "Kizuki",
-    projectDesc:
-      "The Kizuki Club landing page was designed to meet the client's needs by creating a visually appealing and interactive platform that effectively communicates the value proposition of the website to potential users. The combination of HTML, CSS, JavaScript, and GSAp allowed for a dynamic and engaging landing page that was optimized for both desktop and mobile devices.",
-    usedTech: ["HTML", "sass", "javaScript", "GSAP"],
-    liveLink: "https://yaduvanshink.github.io/Grover/",
-    gitHubLink: "https://github.com/yaduvanshiNK/Grover",
-  },
-  {
     websitePreview: images.Medev,
     projectName: "meDEV",
     projectDesc:
       "A creative agency website that was created for a company named meDEV. The website was designed to showcase the company's expertise in branding, website design and development, and marketing. The website was built with a clean and modern design, with the focus on showcasing the company's portfolio of work.",
     usedTech: ["HTML", "sass", "javaScript", "GSAP"],
     liveLink: "https://www.medev.in",
-    gitHubLink: "https://github.com/yaduvanshiNK/Grover",
+    gitHubLink: "https://www.medev.in",
+  },
+
+  {
+    websitePreview: images.Kizuki,
+    projectName: "Kizuki",
+    projectDesc:
+      "The Kizuki Club landing page was designed to meet the client's needs by creating a visually appealing and interactive platform that effectively communicates the value proposition of the website to potential users. The combination of HTML, CSS, JavaScript, and GSAp allowed for a dynamic and engaging landing page that was optimized for both desktop and mobile devices.",
+    usedTech: ["HTML", "sass", "javaScript", "GSAP"],
+    liveLink: "https://yaduvanshink.github.io/kizuki2.0/",
+    gitHubLink: "https://github.com/yaduvanshiNK/kizuki2.0",
   },
 
   {

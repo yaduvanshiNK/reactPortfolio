@@ -2,14 +2,28 @@ import React from "react";
 import "./Introduction.scss";
 import IntroCard from "../Blocks/Intro/IntroCard";
 import introductionData from "../../constants/IntroData";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import { AnimatedSocialIcon } from "react-animated-social-icons";
 
 const Introduction = () => {
+  const container = {
+    show: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
   return (
     <div className="introduction-container">
       <div id="introduction">
-        <div className="cards-conatiner">
+        <motion.div
+          viewport={{ once: true }}
+          className="cards-conatiner"
+          variants={container}
+          initial="hidden"
+          whileInView={"show"}
+        >
           <IntroCard
             title={introductionData[0].title}
             icon={introductionData[0].icon}
@@ -28,9 +42,19 @@ const Introduction = () => {
             desc={introductionData[2].desc}
             count={introductionData[2].projectCount}
           />
-        </div>
+        </motion.div>
 
-        <div className="intro-section">
+        <motion.div
+          className="intro-section"
+          viewport={{ once: true }}
+          whileInView={{
+            y: [100, 0],
+            opacity: [0, 1],
+            transition: {
+              delay: 0.1,
+            },
+          }}
+        >
           <span>Introduce</span>
           <h1>
             <motion.span
@@ -93,7 +117,7 @@ const Introduction = () => {
               animationDuration={0.8}
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

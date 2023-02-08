@@ -35,7 +35,7 @@ const Stars = ({ number }) => {
       className="stars"
     >
       {stars.map((icon) => (
-        <motion.img variants={starsAnimation} src={icon} />
+        <motion.img variants={starsAnimation} src={icon} alt="rating-star" />
       ))}
     </motion.div>
   );

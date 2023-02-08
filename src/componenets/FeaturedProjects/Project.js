@@ -13,13 +13,13 @@ const Project = ({
   return (
     <div className="project-container">
       <div className="project-preview">
-        <img src={websitePreview} />
+        <img src={websitePreview} alt="project-preview" />
       </div>
       <div className="project-desc">
         <span>Featured Project</span>
         <h1>{projectName}</h1>
         <p className="project-info">{projectDesc}</p>
-        <p>
+        <p className="tech-container">
           {usedTech.map((tech) => (
             <span key={`tech-${tech}`}>{tech}</span>
           ))}
@@ -28,6 +28,7 @@ const Project = ({
           <a href={gitHubLink} target="_blank" className="project-github">
             <motion.img
               src={images.lineGithub}
+              alt="project-source-code"
               whileHover={{
                 scale: 1.1,
               }}
@@ -39,6 +40,7 @@ const Project = ({
                 scale: 1.1,
               }}
               src={images.lineShare}
+              alt="live-project-url"
             />
           </a>
         </div>

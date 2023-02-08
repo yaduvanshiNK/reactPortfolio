@@ -35,17 +35,25 @@
   display: flex;
   align-items: center;
   padding: 3rem 0;
+  @media screen and (max-width: 800px) {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
 
   h1 {
     font-family: $robotoMono;
-    color: white;
-    font-weight: 400;
+    color: #fff;
+    font-weight: 500;
     margin-right: 3rem;
+    font-size: 2rem;
   }
   span {
     border-radius: 1px;
     background-color: #8c8d90;
-    height: 2px;
+    height: 1px;
     transform-origin: left, center;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
   }
 }

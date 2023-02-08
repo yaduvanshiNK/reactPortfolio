@@ -14,7 +14,7 @@ import quotesSign from "../assets/quotation.svg";
 import target from "../assets/target.svg";
 import vector from "../assets/vector.svg";
 import mail from "../assets/mail.png";
-import logo from "../assets/neerajLogo.png";
+import logo from "../assets/neerajLogo.webp";
 import left from "../assets/arrow-left-s-line.svg";
 import right from "../assets/arrow-right-s-line.svg";
 import bgCircle from "../assets/bgCircle.svg";

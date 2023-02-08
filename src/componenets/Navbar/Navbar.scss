@@ -43,6 +43,7 @@ nav {
     }
     a {
       color: #fff;
+      text-transform: uppercase;
       text-decoration: none;
       position: relative;
       &:hover {
@@ -153,9 +154,16 @@ nav {
     list-style: none;
     margin-bottom: 4rem;
     font-family: $robotoMono;
-    transform-origin: left center;
+    transform-origin: right center;
+    @media screen and (max-width: 800px) {
+      text-align: left;
+    }
+    @media screen and (max-width: 500px) {
+      text-align: center;
+    }
 
     a {
+      text-transform: uppercase;
       text-decoration: none;
       color: #fff;
       position: relative;
