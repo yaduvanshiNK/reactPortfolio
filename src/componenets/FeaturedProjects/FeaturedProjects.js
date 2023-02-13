@@ -9,28 +9,24 @@ const FeaturedProjects = () => {
     <div id="projects">
       <div className="FeaturedProjects-container">
         <div className="featuredProject-heading">
-          <motion.h1
+          <motion.span
             whileInView={{
               opacity: [0, 1],
-              x: [-10, 0],
-              transition: {
-                type: "spring",
-              },
+              y: [50, 0],
+              transition: { type: "linear" },
             }}
           >
             Some Things I’ve Built
-          </motion.h1>
-          <motion.span
+          </motion.span>
+          <motion.h1
             whileInView={{
-              width: [0, 300],
-              opacity: [0.5, 1],
-              x: [-30, 0],
-              transition: {
-                delay: 0.2,
-                duration: 0.3,
-              },
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { type: "linear", delay: 0.05 },
             }}
-          ></motion.span>
+          >
+            My Projects
+          </motion.h1>
         </div>
 
         <div id="FeaturedProjects">

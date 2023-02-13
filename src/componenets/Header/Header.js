@@ -36,14 +36,39 @@ const Header = () => {
           >
             <span>Front-End Developer</span>
           </motion.div>
-          <h1>
+          <motion.h1
+            viewport={{ once: true }}
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { type: "linear", delay: 0.05 },
+            }}
+          >
             Code is my canvas, <br /> let's create!
-          </h1>
-          <p>
+          </motion.h1>
+          <motion.p
+            viewport={{ once: true }}
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { type: "linear", delay: 0.1 },
+            }}
+          >
             Front-end talk is just hot air, <br /> show me the HTML and CSS
             magic in the code.
-          </p>
-          <a href="#"> Let's Chat!</a>
+          </motion.p>
+          <motion.a
+            href="#contact"
+            viewport={{ once: true }}
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { type: "linear", delay: 0.15 },
+            }}
+          >
+            {" "}
+            Let's Chat!
+          </motion.a>
         </div>
         <div className="hero-bg">
           <div className="hero-image">

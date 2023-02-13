@@ -1,0 +1,94 @@
+@import "../../constants/variables.scss";
+#contact {
+  background-color: $darkGrey;
+}
+
+.contact-main-container {
+  max-width: 1200px;
+  margin: auto;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  span {
+    font-family: $robotoMono;
+    color: #7d7f82;
+  }
+  p {
+    max-width: 70%;
+    margin: auto;
+    color: #7d7f82;
+    font-family: $dmSans;
+    padding: 1rem 0;
+    @media screen and (max-width: 800px) {
+      max-width: 100%;
+      padding: 0 2rem;
+    }
+    @media screen and (max-width: 500px) {
+      padding-bottom: 1rem;
+    }
+  }
+  h1 {
+    font-family: $dmSans;
+    color: #fff;
+    font-size: 3rem;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-footer {
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    img {
+      width: 1.8rem;
+      padding-right: 0.5rem;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  button {
+    background-color: #1c1c1c;
+    color: $green;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: $robotoMono;
+    font-weight: 500;
+    font-size: 0.8rem;
+    &:hover {
+      background-color: #111111;
+      transform: translateY(-1px);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+  }
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #7d7f82;
+  font-family: $robotoMono;
+  font-size: 0.9rem;
+  letter-spacing: -0.5px;
+  padding: 2rem 0;
+}

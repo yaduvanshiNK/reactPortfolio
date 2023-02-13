@@ -18,7 +18,6 @@ const Introduction = () => {
     <div className="introduction-container">
       <div id="introduction">
         <motion.div
-          viewport={{ once: true }}
           className="cards-conatiner"
           variants={container}
           initial="hidden"
@@ -46,9 +45,8 @@ const Introduction = () => {
 
         <motion.div
           className="intro-section"
-          viewport={{ once: true }}
           whileInView={{
-            y: [100, 0],
+            x: [100, 0],
             opacity: [0, 1],
             transition: {
               delay: 0.1,

@@ -26,6 +26,9 @@ import Kizuki from "../assets/kizukiPreview.webp";
 import Medev from "../assets/medevPreview.webp";
 import lineGithub from "../assets/lineGithub.svg";
 import lineShare from "../assets/lineShare.svg";
+import Abhishek from "../assets/AbhiShek.webp";
+import Gaurav from "../assets/gaurav.webp";
+import Rishab from "../assets/rishz.webp";
 
 export default {
   lineGithub,
@@ -56,4 +59,7 @@ export default {
   left,
   right,
   bgCircle,
+  Abhishek,
+  Gaurav,
+  Rishab,
 };

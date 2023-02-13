@@ -27,6 +27,7 @@ const TestimonialCard = ({ number, review }) => {
     opacity: [0, 1],
     y: [20, 0],
     transition: {
+      delay: 0.1,
       duration: 0.2,
     },
   };

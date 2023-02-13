@@ -2,7 +2,7 @@ import images from "./imageRef";
 const introductionData = [
   {
     title: "Design",
-    desc: "Create digital products with unique ideas",
+    desc: "Create digital presence with unique ideas",
     projectCount: "READ MORE",
     icon: images.vector,
   },
@@ -14,7 +14,7 @@ const introductionData = [
   },
   {
     title: "React projects",
-    desc: "Boost your business with SEO optimize",
+    desc: "I craft breathtaking React Apps to solve your problem",
     projectCount: "READ MORE",
     icon: images.reactSvg,
   },

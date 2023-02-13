@@ -7,6 +7,7 @@ import {
   Intro,
   Testimonial,
   FeaturedProjects,
+  Contact,
 } from "./constants/componentReft";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
       <Intro />
       <FeaturedProjects />
       <Testimonial />
+      <Contact />
     </Fragment>
   );
 };

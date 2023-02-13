@@ -1,7 +1,7 @@
 import images from "./imageRef";
 const TestimonialData = [
   {
-    userImg: images.discord,
+    userImg: images.Rishab,
     userName: "Rishab Bhatia",
     designation: "Designer",
     companyName: "meDev",
@@ -9,20 +9,20 @@ const TestimonialData = [
     review: `I am thoroughly impressed with their skills and expertise in the field. Neeraj's coding abilities are top-notch and they were able to create a beautiful, responsive website that exceeded our expectations.`,
   },
   {
-    userImg: images.discord,
-    userName: "Love Chaudhary",
+    userImg: images.Gaurav,
+    userName: "Gaurav Bhogal",
     designation: "Designer",
-    companyName: "meDev",
+    companyName: "Freelancer",
     starCount: 4,
-    review: `I am highly impressed with Neeraj's exceptional coding skills and expertise in the field. They have created a visually stunning and highly responsive website that exceeded all of our expectations.`,
+    review: `His proficiency and mastery truly astounds me. His coding proficiency is first-rate and he was able to fashion a visually stunning, easily navigable website.`,
   },
   {
-    userImg: images.discord,
+    userImg: images.Abhishek,
     userName: "Abhishek Jha",
-    designation: "DMT",
+    designation: "Founder",
     companyName: "Mediarth",
     starCount: 4,
-    review: `I am thoroughly impressed with their skills and expertise in the field. Neeraj's coding abilities are top-notch and they were able to create a beautiful, responsive website that exceeded our expectations.`,
+    review: `The final product was not only beautiful and visually appealing, but it was also highly responsive and user-friendly. Neeraj took the time to understand my vision and was able to bring it to life.`,
   },
 ];
 

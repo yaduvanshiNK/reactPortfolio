@@ -1,15 +1,15 @@
 @import "../../constants/variables.scss";
 .testimonial-container {
+  max-width: 1200px;
+  margin: auto;
+}
+#tetstimonial {
   width: 100%;
   background-color: $lightGrey;
   padding: 3rem;
   @media screen and (max-width: 500px) {
     padding: 3rem 2rem;
   }
-}
-#tetstimonial {
-  max-width: 1200px;
-  margin: auto;
 }
 
 .reviewers-conatiner {
@@ -34,26 +34,20 @@
 .testimonial-heading {
   display: flex;
   align-items: center;
+  flex-direction: column;
   padding: 3rem 0;
   @media screen and (max-width: 800px) {
     padding-top: 0;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 
   h1 {
-    font-family: $robotoMono;
+    font-family: $dmSans;
     color: #fff;
-    font-weight: 500;
-    margin-right: 3rem;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   span {
-    border-radius: 1px;
-    background-color: #8c8d90;
-    height: 1px;
-    transform-origin: left, center;
-    @media screen and (max-width: 500px) {
-      display: none;
-    }
+    font-family: $robotoMono;
+    color: #7d7f82;
   }
 }

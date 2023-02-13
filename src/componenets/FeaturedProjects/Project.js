@@ -11,10 +11,24 @@ const Project = ({
   gitHubLink,
 }) => {
   return (
-    <div className="project-container">
-      <div className="project-preview">
+    <motion.div
+      whileInView={{
+        opacity: [0, 1],
+        y: [50, 0],
+        transition: { type: "linear" },
+      }}
+      className="project-container"
+    >
+      <motion.div
+        className="project-preview"
+        whileInView={{
+          opacity: [0, 1],
+          y: [50, 0],
+          transition: { type: "linear", delay: 0.05 },
+        }}
+      >
         <img src={websitePreview} alt="project-preview" />
-      </div>
+      </motion.div>
       <div className="project-desc">
         <span>Featured Project</span>
         <h1>{projectName}</h1>
@@ -45,7 +59,7 @@ const Project = ({
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -38,6 +38,14 @@ const Navbar = () => {
               whileTap={{
                 scale: 0.9,
               }}
+              whileInView={{
+                opacity: [0, 1],
+                y: [10, 0],
+                transition: {
+                  type: "linear",
+                  delay: 0.05,
+                },
+              }}
               key={`link-${menuItem.name}`}
               id={`menu-item-${index}`}
             >
@@ -46,7 +54,11 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="app-nav-connect">
-          <motion.a href="#" className="nav-github">
+          <motion.a
+            href="https://github.com/yaduvanshiNK"
+            target="_blank"
+            className="nav-github"
+          >
             <motion.img
               whileHover={{
                 scale: 1.2,
@@ -54,14 +66,7 @@ const Navbar = () => {
               src={image.github}
               alt="yaduvanshink-github"
             />
-            <motion.span
-              whileInView={{
-                x: [-50, 0],
-                opacity: [0.5, 1],
-              }}
-            >
-              Github
-            </motion.span>
+            <motion.span>Github</motion.span>
           </motion.a>
           <motion.a
             whileHover={{
@@ -70,7 +75,7 @@ const Navbar = () => {
             whileInView={{
               opacity: [0.3, 1],
             }}
-            href="#"
+            href="mailto:yneerajkumar221@gmail.com"
             className="nav-mail"
           >
             <img src={image.mail} alt="yaduvasnhink-mail" />

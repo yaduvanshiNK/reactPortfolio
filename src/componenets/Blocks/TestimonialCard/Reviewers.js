@@ -1,9 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./TestimonialCard.scss";
 
 const Reviewers = ({ icon, name, designation, companyName }) => {
   return (
-    <div className="reviewer">
+    <motion.div
+      whileInView={{
+        opacity: [0, 1],
+        y: [50, 0],
+        transition: { type: "linear" },
+      }}
+      className="reviewer"
+    >
       <div className="reviewer-icon">
         <img src={icon} alt="user-profile-icon" />
       </div>
@@ -13,7 +21,7 @@ const Reviewers = ({ icon, name, designation, companyName }) => {
           {designation}, <span>{companyName}</span>
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

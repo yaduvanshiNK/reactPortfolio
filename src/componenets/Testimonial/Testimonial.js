@@ -7,33 +7,30 @@ import Reviewers from "../Blocks/TestimonialCard/Reviewers";
 const Testimonial = () => {
   const [reviews, setReviews] = useState(0);
   const [star, setStar] = useState(TestimonialData[0].starCount);
-
   return (
-    <div className="testimonial-container">
-      <div id="tetstimonial">
+    <div id="tetstimonial">
+      <div className="testimonial-container">
         <div className="testimonial-heading">
-          <motion.h1
+          <motion.span
+            viewport={{ once: true }}
             whileInView={{
               opacity: [0, 1],
-              x: [-10, 0],
-              transition: {
-                type: "spring",
-              },
+              y: [50, 0],
+              transition: { type: "linear" },
+            }}
+          >
+            Rave Reviews From Our Clients
+          </motion.span>
+          <motion.h1
+            viewport={{ once: true }}
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { type: "linear", delay: 0.05 },
             }}
           >
             Testimonials
           </motion.h1>
-          <motion.span
-            whileInView={{
-              width: [0, 300],
-              opacity: [0.5, 1],
-              x: [-30, 0],
-              transition: {
-                delay: 0.2,
-                duration: 0.3,
-              },
-            }}
-          ></motion.span>
         </div>
         <TestimonialCard
           number={star}
